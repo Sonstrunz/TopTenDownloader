@@ -49,7 +49,7 @@ public class FeedEntry {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
-    }
+}
 
 //    @Override
 //    public String toString() {

@@ -1,12 +1,17 @@
 package com.example.raffaele.toptendownloader;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
+import android.os.NetworkOnMainThreadException;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -129,6 +134,7 @@ public class MainActivity extends AppCompatActivity {
 //                    MainActivity.this, R.layout.list_item, parseApplications.getApplications()
 //            );
 //            listApps.setAdapter(arrayAdapter);
+
             FeedAdapter feedAdapter = new FeedAdapter(MainActivity.this, R.layout.list_record, parseApplications.getApplications());
 
             listApps.setAdapter(feedAdapter);
